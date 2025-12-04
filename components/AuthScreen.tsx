@@ -120,7 +120,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onSignUp, onAdminLogin
                     className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <div 
-                        className="w-full h-full bg-cover bg-center animate-kenburns"
+                        className="w-full h-full bg-cover bg-center animate-slow-zoom"
                         style={{ backgroundImage: `url(${src})` }}
                     />
                 </div>
@@ -328,7 +328,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onSignUp, onAdminLogin
                         )}
                     </div>
 
-                    {/* Admin Button Relocated Inside Card */}
+                    {/* Admin Button Relocated Inside Card - Below Toggle Link */}
                     <div className="mt-6 pt-4 border-t border-white/10 flex justify-center">
                         <button 
                             onClick={() => setIsPinModalOpen(true)}

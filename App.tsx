@@ -81,7 +81,6 @@ const App: React.FC = () => {
     const [paymentModal, setPaymentModal] = useState<PaymentModalState>({ isOpen: false, amount: 0, description: '', onConfirm: () => {} });
     const [publicProfileUser, setPublicProfileUser] = useState<User | null>(null);
     const [isPublicProfileOpen, setIsPublicProfileOpen] = useState(false);
-    const [generatedCode, setGeneratedCode] = useState(''); 
     
     // Chat State
     const [currentChatFriend, setCurrentChatFriend] = useState<User | null>(null);
